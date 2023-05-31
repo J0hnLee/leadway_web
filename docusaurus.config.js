@@ -40,6 +40,12 @@ const config = {
     },
   },
 
+  //讓markdown 可以顯示mermaid
+  markdown: {
+    mermaid: true,
+  },
+  themes: ["@docusaurus/theme-mermaid"],
+
   presets: [
     [
       "classic",
@@ -71,6 +77,13 @@ const config = {
     ({
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
+
+      mermaid: {
+        theme: { light: "neutral", dark: "forest" },
+        options: {
+          maxTextSize: 500,
+        },
+      },
       // algolia: {
       //   apiKey: process.env.ALGOLIA_APIKEY,
       //   indexName: process.env.ALGOLIA_INDEXNAME,
@@ -96,6 +109,7 @@ const config = {
 
       //   //... other Algolia params
       // },
+
       navbar: {
         title: "Leadway",
         logo: {
@@ -117,10 +131,11 @@ const config = {
           },
           {
             type: "localeDropdown",
-            position: "left",
+            position: "right",
           },
         ],
       },
+
       footer: {
         style: "dark",
         links: [

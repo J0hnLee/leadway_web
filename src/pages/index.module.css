@@ -3,12 +3,46 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
+ /**
+ .heroBanner {
+  padding: 10rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-}
+  background: linear-gradient(to left, #ffe200, #e87ea0);
+  transition: background 10s ease; /* 添加过渡效果，使背景颜色平滑变化 */
+
+/*
+.heroBanner:hover {
+  background: linear-gradient(to right, #ffe200, #e87ea0); /* 添加渐层色效果 */
+  .heroBanner {
+    padding: 10rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(45deg,#4cc844,#e6cb00, #e87ea0);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .heroBanner:hover {
+    animation: none; /* 停止背景渐变动画 */
+    background: linear-gradient(45deg, #ff512f, #dd2476, #5b3f92);
+  }
+  
+
 
 @media screen and (max-width: 996px) {
   .heroBanner {

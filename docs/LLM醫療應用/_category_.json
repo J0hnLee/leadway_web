@@ -1,6 +1,6 @@
 {
-  "label": "Tutorial - Extras",
-  "position": 4,
+  "label": "LLM醫療應用",
+  "position": 1,
   "link": {
     "type": "generated-index"
   }
