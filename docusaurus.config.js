@@ -3,7 +3,6 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-const dotenv = require("docusaurus2-dotenv");
 require("dotenv").config();
 
 /** @type {import('@docusaurus/types').Config} */
@@ -50,13 +49,13 @@ const config = {
 
   plugins: [
     // ...其他插件
+
+    // Other plugins
     [
-      dotenv,
+      "docusaurus-plugin-dotenv",
       {
-        path: ".env",
-        safe: true,
+        path: "./.env",
         systemvars: true,
-        silent: true,
       },
     ],
   ],
