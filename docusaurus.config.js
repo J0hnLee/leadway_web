@@ -8,7 +8,7 @@ require("dotenv").config();
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Leadawy",
+  title: "Leadway",
   tagline: "因為理解所以維繫",
   favicon: "img/favicon.ico",
 
@@ -21,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "Leadway Pharmacy", // Usually your GitHub org/user name.
-  projectName: "leadway web", // Usually your repo name.
+  projectName: "leadway Web", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
