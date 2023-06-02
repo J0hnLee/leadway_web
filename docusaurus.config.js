@@ -3,6 +3,8 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const dotenv = require("docusaurus2-dotenv");
+require("dotenv").config();
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -46,6 +48,19 @@ const config = {
   },
   themes: ["@docusaurus/theme-mermaid"],
 
+  plugins: [
+    // ...其他插件
+    [
+      dotenv,
+      {
+        path: ".env",
+        safe: true,
+        systemvars: true,
+        silent: true,
+      },
+    ],
+  ],
+
   presets: [
     [
       "classic",
@@ -84,31 +99,31 @@ const config = {
           maxTextSize: 500,
         },
       },
-      // algolia: {
-      //   apiKey: process.env.ALGOLIA_APIKEY,
-      //   indexName: process.env.ALGOLIA_INDEXNAME,
-      //   appId: process.env.ALGOLIA_APPID,
+      algolia: {
+        apiKey: process.env.ALGOLIA_APIKEY,
+        indexName: process.env.ALGOLIA_INDEXNAME,
+        appId: process.env.ALGOLIA_APPID,
 
-      //   // Optional: see doc section below
-      //   contextualSearch: true,
+        // Optional: see doc section below
+        contextualSearch: true,
 
-      //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-      //   externalUrlRegex: "external\\.com|domain\\.com",
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        externalUrlRegex: "external\\.com|domain\\.com",
 
-      //   // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-      //   replaceSearchResultPathname: {
-      //     from: "/docs/", // or as RegExp: /\/docs\//
-      //     to: "/",
-      //   },
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        replaceSearchResultPathname: {
+          from: "/docs/", // or as RegExp: /\/docs\//
+          to: "/",
+        },
 
-      //   // Optional: Algolia search parameters
-      //   searchParameters: {},
+        // Optional: Algolia search parameters
+        searchParameters: {},
 
-      //   // Optional: path for search page that enabled by default (`false` to disable it)
-      //   searchPagePath: "search",
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: "search",
 
-      //   //... other Algolia params
-      // },
+        //... other Algolia params
+      },
 
       navbar: {
         title: "Leadway",
