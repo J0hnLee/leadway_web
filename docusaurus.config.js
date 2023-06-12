@@ -128,7 +128,9 @@ const config = {
         title: "Leadway",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg",
+          src: "img/android-chrome-512x512.png",
+          width: 36,
+          height: 36,
         },
         items: [
           {
@@ -157,8 +159,8 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "醫療應用",
+                to: "/docs/category/llm醫療應用",
               },
             ],
           },
@@ -186,6 +188,10 @@ const config = {
           {
             title: "聯繫我們",
             items: [
+              {
+                label: "mail",
+                to: "mailto:leadwayrx@gmail.com",
+              },
               {
                 label: "Blog",
                 to: "/blog",
