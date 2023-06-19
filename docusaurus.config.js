@@ -189,10 +189,9 @@ const config = {
             title: "聯繫我們",
             items: [
               {
-                label: "Line官方帳號",
-                href: "https://lin.ee/bFUQGak",
-                // html: '<img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="36" border="0">',
+                html: `<a href="https://lin.ee/bFUQGak"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="36" border="0"></a>`,
               },
+
               {
                 label: "Mail",
                 to: "mailto:leadwayrx@gmail.com",
