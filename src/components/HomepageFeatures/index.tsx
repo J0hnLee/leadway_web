@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: '專注健康',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/focus_on_health.svg').default,
     description: (
       <>
         理維的藥師熱衷於追求健康，致力於將最新技術應用於醫療產業，為民眾帶來卓越的醫療體驗。我們提供最新國際知識，專注於健康科技和數位健康，為未來十年帶來更多可能。
@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '維繫醫病，延伸關懷',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/smile.svg').default,
     description: (
       <>
         醫療人員與患者建立連結，不僅在診所或藥局，還能在家中延續關懷，提供個別化的建議。
@@ -29,7 +29,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '醫療賦能',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/medical_repower.svg').default,
     description: (
       <>
         醫療賦能的目標是透過技術和知識的傳遞，提升醫療人員的能力和專業水準，
