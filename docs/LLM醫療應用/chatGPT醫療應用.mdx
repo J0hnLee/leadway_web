@@ -12,18 +12,27 @@ tags: [LLM, 大語言模型, chatGPT]
 
 ## chatGPT 的歷史以及由來
 
-ChatGPT 近期席捲全球，這一款由 OpenAI 開發的一個大型語言模型，
-它基於 GPT（Generative Pre-trained Transformer）的架構不斷改進而來。
-GPT 是一個被設計用於處理自然語言處理任務的深度學習模型，它在大量的文本數據上進行預訓練，
-然後可以用於執行各種語言相關的任務，如文本生成、問答、翻譯等。
+ChatGPT 近期席捲全球，這一款由 OpenAI 開發的一個大型語言模型，它基於 GPT（Generative Pre-trained Transformer）的架構不斷改進而來。
+
+GPT 是一個被設計用於處理自然語言處理任務的深度學習模型，它在大量的文本數據上進行預訓練，然後可以用於執行各種語言相關的任務，如文本生成、問答、翻譯等。
+
 隨著模型的神經網路節點爆炸性的增長，GPT 模型展現出強大的語言理解和生成能力。
+
 值得注意的是，ChatGPT 仍然有其限制和挑戰。
-它可能產生不正確或模棱兩可的答案，並且對於某些敏感或具有潛在風險的主題，
-可能需要進一步的人工審查和控制。
+
+它可能產生不正確或模棱兩可的答案，並且對於某些敏感或具有潛在風險的主題，可能需要進一步的人工審查和控制。
 
 ## chatGPT 是如何出現的？
 
-<iframe
+ChatGPT 的歷史可以追溯到 2015 年，當時 OpenAI 首次發布了一個基於循環神經網絡（Recurrent Neural Network）的模型，稱為 Seq2Seq。該模型的目標是進行序列到序列的學習，例如機器翻譯。然而，Seq2Seq 模型在處理長文本時遇到了一些問題，因為它無法捕捉到長期的依賴關係。
+
+為了解決這個問題，Transformer 模型於 2017 年被提出，並且取得了巨大的成功。Transformer 模型使用了自注意力機制（Self-Attention），可以有效地處理長文本並捕捉到不同位置之間的關係。這對於語言模型來說是非常重要的，因為它需要理解上下文並生成合理的回答。
+
+在 2018 年，OpenAI 推出了 GPT 模型，這是一個基於 Transformer 架構的語言模型。它在大量的互聯網文本數據上進行了預訓練，使得它能夠理解和生成自然語言。GPT 模型取得了巨大的成功，但它的大小和計算成本限制了它在實際應用中的使用。
+
+為了繼續改進和發展語言模型，OpenAI 於 2020 年發布了 GPT-3，這是當時最大的語言模型，擁有 1.75 萬億個參數。GPT-3 在多個語言相關的任務上取得了驚人的成果，並展現出強大的語言理解和生成能力。
+
+<!-- <iframe
   width="768"
   height="512"
   src="https://www.youtube.com/embed/sL1BNTU-4PI"
@@ -31,26 +40,17 @@ GPT 是一個被設計用於處理自然語言處理任務的深度學習模型�
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   allowfullscreen
-></iframe>
+></iframe> -->
 
 ## chatGPT 可以用在醫療上嗎?
+
+![狗狗 Sassy](https://pbs.twimg.com/media/FsFvxQ5XsAA0puX?format=jpg&name=medium)
 
 export const TwitterPost = () => (
   <div>
     <blockquote className="twitter-tweet">
       <p lang="en" dir="ltr">
-        <a href="https://twitter.com/hashtag/GPT4?src=hash&amp;ref_src=twsrc%5Etfw">
-          #GPT4
-        </a>
-        <b>saved my dog's life.</b>
-        <br />
-        <br />
-        After my dog got diagnosed with a tick-borne disease, the vet started
-        her on the proper treatment, and despite a serious anemia, her condition
-        seemed to be improving relatively well.
-        <br />
-        <br />
-        After a few days however, things took a turn for the worse 1/
+        <b>GPT4拯救了我的愛狗</b>
       </p>
       &mdash; Cooper (@peakcooper)
       <a href="https://twitter.com/peakcooper/status/1639716822680236032?ref_src=twsrc%5Etfw">
@@ -67,43 +67,67 @@ export const TwitterPost = () => (
 
 <TwitterPost />
 
-根據 Cooper 在 Twitter 上的描述，他的狗狗 Sassy 在 3 月 20 日發高燒，
-帶她去看獸醫後被診斷為蜱傳疾病。
-獸醫開了三天的抗生素治療但是狀況並沒有改善，
-反而出現了貧血和牙齦變白的症狀。
-第二次血液檢查顯示貧血情況更加嚴重，其他相關感染的測試結果均為陰性。
-狗狗的狀況持續惡化，獸醫無法確定原因，建議等待觀察。
-Cooper 決定尋求第二位獸醫的意見，
-他同時向 ChatGPT 請求診斷。
-ChatGPT 解釋第一次測試異常值表示有其他潛在問題導致貧血。
-Cooper 問及其他可能的潛在問題，ChatGPT 提供了選項列表。
-然而，其他測試排除了其他合併感染和內出血，Cooper 得出一個符合所有情況的單一診斷。
-在找到第二位獸醫後，Cooper 詢問該診斷是否可能，獸醫同意並進行進一步的測試，證實了 ChatGPT 的判斷是正確的。Cooper 開始對 Sassy 進行適當治療，現在她幾乎完全康復。Cooper 提到巴貝斯蟲病是最常見的蜱傳疾病，而免疫介導溶血性貧血(IMHA)則是常見的併發症，尤其在邊境牧羊犬這個品種中。Cooper 對第一位獸醫無法正確診斷感到困惑，認為可能是醫生無能或管理不善。
-這了例子展示了大語言模型在
-:::importantBoxed
+根據 Cooper 在 Twitter 上的描述，他的狗狗 Sassy 在 3 月 20 日發高燒，帶她去看獸醫後被診斷為蜱傳疾病。獸醫開了三天的抗生素治療但是狀況並沒有改善，反而出現了貧血和牙齦變白的症狀。
 
-This section assumes you are using the official Docusaurus content plugins.
+第二次血液檢查顯示貧血情況更加嚴重，其他相關感染的測試結果均為陰性。狗狗的狀況持續惡化，獸醫無法確定原因，建議等待觀察。
 
-:::
+Cooper 決定尋求第二位獸醫的意見，他同時向 ChatGPT 請求診斷。ChatGPT 解釋第一次測試異常值表示有其他潛在問題導致貧血。
 
-### Details element example
+Cooper 問及其他可能的潛在問題，ChatGPT 提供了選項列表。然而，其他測試排除了其他合併感染和內出血，Cooper 得出一個符合所有情況的單一診斷。
 
-<details>
-  <summary>Toggle me!</summary>
-  <div>
-    <div>This is the detailed content</div>
-    <br />
-    <details>
-      <summary>Nested toggle! Some surprise inside...</summary>
-      <div>😲😲😲😲😲</div>
-    </details>
-  </div>
-</details>
+在找到第二位獸醫後，Cooper 詢問該診斷是否可能，獸醫同意並進行進一步的測試，證實了 ChatGPT 的判斷是正確的。Cooper 開始對 Sassy 進行適當治療，現在她幾乎完全康復。
 
-## chatgpt 延伸應用
+Cooper 提到巴貝斯蟲病是最常見的蜱傳疾病，而免疫介導溶血性貧血(IMHA)則是常見的併發症，尤其在邊境牧羊犬這個品種中。
 
-autoGPT
-https://www.storm.mg/lifestyle/4775747?mode=whole
-健身計畫
-影養計畫
-商品使用
+Cooper 對第一位獸醫無法正確診斷感到困惑，認為可能是醫生無能或管理不善。
+
+這個例子展示了大語言模型在提供可能的診斷方向和相關知識方面的潛力，以幫助人們更好地理解和處理動物健康問題。
+
+## 那在人方面可以應用嗎?
+
+國外在 chatGPT 出來不久便做了一些簡單實驗，在[**_ JAMA Internal Medicine_**](https://jamanetwork.com/journals/jamainternalmedicine/article-abstract/2804309)
+期刊中顯示，針對 Reddit 上隨機抽取的 195 個患者問題。
+
+由一群醫療保健專業人士組成的團隊比較了醫生和聊天機器人對公共社交媒體論壇上公開提出的患者問題的反應。
+
+聊天機器人的反應比醫生的反應更受青睞，並且在回答問題的質量上和同理心方面的評分顯著更高。
+
+中國也開發出 medGPT，並聲稱具備接近 3000 種疾病的初診能力，曾經做過模擬測試。
+
+抽取了 532 名覆診患者讓「medGPT」做模擬診斷測試，「medGPT」作出的診斷結果，跟醫生對病患者原本作出的診斷有 97.5% 以上吻合。
+
+以上例子再再顯示出，醫療機器人不再只是死板照著指令給出回答的程式。
+
+chatGPT 模型展現出來的能力在醫學可能還有相當大的發展空間。
+
+## chatGPT 延伸應用
+
+![LangChain](https://datasciencedojo.com/wp-content/uploads/Overview-of-LangChain-Modules-.png)
+
+<p>基於<a href="https://python.langchain.com/docs/get_started/introduction.html">
+langchain
+
+</a>的條件下可以賦予 AI 更多的能力。
+</p>
+LangChain 是一個用於開發由語言模型驅動的應用程序的框架。他主要擁有 2 個能力：
+
+1. 可以將 LLM 模型與外部數據源進行連接
+2. 允許與 LLM 模型進行交互
+
+有了以上的能力你可以輕鬆讓 chatGPT 讀你的資料庫，或是 pdf，比如很長很複雜的論文，或是多篇文獻，都可以同時丟給 chatGPT，並由 chatGPT 解釋。
+甚至是以往耗時 EBM(Evidence based medicine)實證醫學，都可以藉由新的工具的出現，縮短可觀的時間。
+李藥師做過，讓 chatGPT 讀文獻不會太難，但是閱讀文獻真的輕鬆很多，想知道做法可以來信，或是再寫一篇作法?!
+
+## 鼓勵使用 chatGPT 嗎?
+
+新科技會有一些陣痛期，大家會害怕，就像火車、飛機剛發明的時候一樣，會擔心是正常的。
+
+但是，我們也必須認識到 chatGPT 在許多領域具有巨大的應用潛力。
+
+它未來可以幫助人們解決日常生活中的問題，如健身計畫、營養計畫和商品使用等。
+
+在醫學領域，chatGPT 的表現甚至已經超越了部分醫生，擁有更高的品質和同理心。
+
+當然，新科技總是需要一些時間來被大眾接受，但我們應該鼓勵人們使用 chatGPT，並將其應用到更多領域中。
+
+下一篇來看看藥師基於 chatGPT 跟 LangChain 開發的 LeadwayGPT 表現如何!!
