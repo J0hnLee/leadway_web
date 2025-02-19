@@ -4,7 +4,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import "@docsearch/css";
+//import "@docsearch/css";
 import { TypeAnimation } from "react-type-animation";
 
 import styles from "./index.module.css";
