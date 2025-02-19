@@ -60,6 +60,13 @@ const config = {
         systemvars: true,
       },
     ],
+    [
+      "vercel-analytics",
+      {
+        debug: true,
+        mode: "auto",
+      },
+    ],
   ],
 
   presets: [
